@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <title>O Fantástico Mundo...</title>
+</head>
+
+<body >
+    <!--Web Header-->
+    <header id="cabecalho">
+            <div class="navbar navbar-expand-lg">
+                <div class="container">
+                    <h1>O Fantástico mundo do Bootstrap...</h1>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon">
+                        </span>
+                    </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cards">Cards</a>
+                        </li>
+                    </ul>
+    </header>
+
+    <main data-bs-spy="scroll" data-bs-target="header">
+    <!--Web Carousel-->
+    <div id="album-container" class="container">
+        <div id="album" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/12/27/14/02/friends-3042751_1280.jpg" alt="Árvore com o por-do-sol no meio">
+                    <div class="carousel-caption">
+                            Cachorro e humana olhando para um lago
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/04/24/03/22/butterfly-7947062_1280.jpg" alt="Estrada no meio do campo">
+                    <div class="carousel-caption">
+                        Borboletas que voam e encontram novos caminhos
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/03/06/22/32/egyptian-goose-7834621_1280.jpg" alt="Rio ao nascer do sol">
+                    <div class="carousel-caption">
+                        Amor de uma mãe com seus filhotes
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2020/02/24/12/56/lisbon-4876136_1280.jpg" alt="Coruja com olhar fixo">
+                    <div class="carousel-caption">
+                            Torre de Belém
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#album" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#album" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button class="active" type="button" data-bs-target="#album" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#album" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#album" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#album" data-bs-slide-to="3"></button>
+            </div>    
+        </div>
+    </div>
+        <!--Conteudo-->
+        <div class="container mt-5" id="cards">
+            <div class="row">
+                <h3>Cards</h3>
+            </div>
+            <div class="row justify-content-center">
+                <!--Cards-->
+                <section>
+                     <div class="row">
+                        <div class="col-4">
+                            <div class="card">
+                                <header class="card-header">
+                                    Animais
+                                </header>
+                                <img src="https://img.freepik.com/fotos-gratis/grupo-de-animais-fofos-em-fundo-branco_23-2150038559.jpg?w=740&t=st=1684370438~exp=1684371038~hmac=65bab6efc87112b46138b6ac5553b55f180c2e80eb146b4172a402dcfcf29883" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Convivência</h4>
+                                    <p class="card-text">
+                                        Gosta de animais? <br>
+                                        Você sabia que o convivio com eles pode trazer benefícios para a saúde dos seres humanos? Podem reduzir os níveis de estresse e incidencia de resfriados e dores de cabeça. Também é possível que haja o aumento da imunidade em idosos e crianças. <br>
+                                        Quer saber mais? Clique no botão abaixo ;)
+                                    </p>
+                                    <a href="#" class="btn btn-primary" onclick="Aproveite(this)" data-bs-toggle="modal" data-bs-target="#cardsModal">Saiba Mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    Postado em <time>01/03/2023 às 18:10</time>
+                                </footer>
+                            </div>
+                        </div>
+            
+                        <div class="col-4">
+                            <div class="card">
+                                <header class="card-header">
+                                    Viagens 
+                                </header>
+                                <img src="https://img.freepik.com/vetores-gratis/fundo-de-ferias-e-feriados-com-mala-de-globo-realista-e-camera-fotografica_1284-10476.jpg?1&w=740&t=st=1684370584~exp=1684371184~hmac=94878d664f69770e515c7c5c35e5ff96e2b09bd329e0291fda4e92212cd87d45" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Viaje mais pagando menos</h4>
+                                    <p class="card-text">
+                                        Faça o seu dinheiro render e aprenda como viajar o mundo pagando menos
+            
+                                    </p>
+                                    <a href="#" class="btn btn-primary" onclick="Aproveite(this)" data-bs-toggle="modal" data-bs-target="#cardsModal">Saiba Mais</a>
+
+                                </div>
+                                <footer class="card-footer">
+                                    Postado em <time>10/05/2023 às 19:00</time>
+                                </footer>
+                            </div>
+                        </div>
+                 
+                        <div class="col-4">
+                            <div class="card">
+                                <header class="card-header">
+                                    Séries de TV
+                                </header>
+                                <img src="https://img.freepik.com/fotos-gratis/homem-assistindo-a-um-programa-na-tv_23-2149047401.jpg?w=740&t=st=1684371009~exp=1684371609~hmac=9e907f2dd3a7441cbd6bfef396d0228c07bb1c41f2924202175da43672dbe99e" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Séries de TV</h4>
+                                    <p class="card-text">
+                                        Fã de séries de TV? <br> 
+                                        :) <br>
+                                        Encontrou o lugar certo! <br>
+                                        Conheça as melhores séries de comédia, terror, romance, suspense, drama, ação, anime para se divertir, levar uns sustos, ficar nervoso... <br>
+                                        AH, além das dicas de séries também indicamos qual o melhor streaming para você assistir!
+            
+                                    </p>
+                                    <a href="#" class="btn btn-primary" onclick="Aproveite(this)" data-bs-toggle="modal" data-bs-target="#cardsModal">Saiba Mais</a>
+                                </div>
+
+                                <footer class="card-footer">
+                                    Postado em <time>10/05/2023 às 19:00</time>
+                                </footer>
+                            </div>
+                        </div>
+                    </section> 
+
+            </div>
+        </div>        
+    </main>
+
+     
+    <div class="modal" tabindex="-1" id="cardsModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-success">Atenção</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" data-bs-target="#cardsModal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p id="modal-body-p">Já que você quer saber mais sobre isso, que tal contribuir com a nossa Startup? </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" data-bs-target="#cardsModal">Cancelar</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-target="#cardsModal">Confirmar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+        crossorigin="anonymous"></script>
+
+
+        
+</body>
+
+<footer>
+    Desenvolvido por Pereira10ti
+</footer>
+
+</html>
+
